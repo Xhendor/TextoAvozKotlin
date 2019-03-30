@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".MainActivity">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <EditText
+      android:id="@+id/edittext_input"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ems="10">
+      <requestFocus/>
+    </EditText>
+
+    <Button
+      android:id="@+id/button_speak"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Speak"/>
+
+    <TextView
+      android:text="Pitch:"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" android:id="@+id/textoA" android:textStyle="bold"/>
+    <SeekBar
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" android:id="@+id/mySeekBar" style="@style/Widget.AppCompat.SeekBar"
+      android:max="10" android:progress="5"/>
+
+    <TextView
+      android:text="Speed:"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" android:id="@+id/textoB" android:textStyle="bold"/>
+    <SeekBar
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" android:id="@+id/mySeekSpeed" android:max="10" android:progress="5"
+      style="@style/Widget.AppCompat.SeekBar"/>
+
+  </LinearLayout>
+</android.support.constraint.ConstraintLayout>
